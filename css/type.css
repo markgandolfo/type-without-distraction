@@ -1,0 +1,160 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+#content {
+  height: 100vh;
+  width: 100wh;
+  padding: 20px;
+  border: 0;
+}
+
+aside {
+  background-color: #383838;
+  color: #383838;
+  height: 100vh;
+  width: 0px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+  transition: width 0.05s ease-out;
+}
+
+h1 {
+  font-size: 1.3rem;
+  color: #fefefe;
+  text-transform: uppercase;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+aside:hover .logo .subtle {
+  color: #d4d4d4;
+  margin-bottom: 20px;
+  font-size: .7rem;
+}
+
+.logo {
+  border-bottom: 1px solid #d4d4d4;
+  margin-bottom: 30px;
+  flex-direction: column;
+}
+
+aside * {
+  display: none;
+}
+
+aside:hover * {
+  display: flex;
+}
+
+aside nav {
+  display: flex;
+}
+
+aside a {
+  color: #383838;
+  text-decoration: none;
+}
+
+aside input {
+  display: none;
+}
+
+aside:hover a {
+  color: #efefef;
+  background: #437fec;
+  padding: 3px 6px;
+  border-radius: 2px;
+}
+
+aside:hover input {
+  display: inline-block;
+  padding: 4px 5px;
+  border: none;
+}
+
+aside:hover {
+  border: 0;
+  border-bottom: 1px solid #383838;
+  width: 240px;
+  position: fixed;
+}
+
+aside:hover .logo {
+  color: #ffffff;
+}
+
+
+#breathing-button {
+  color: rgba(255, 255, 255, .9);
+  font-size: 1.4rem;
+  animation: breathing 9s ease-out infinite normal;
+}
+
+#curtain {
+  position: fixed;
+  background-color: rgba(0,0,0,.8);
+  color: #fefefe;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#curtain #message {
+  color: rgba(0,0,0,.8);
+}
+
+
+@-webkit-keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}

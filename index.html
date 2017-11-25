@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Type | Without Distraction</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="css/type.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="curtain">
+      <div id="breathing-button">Take a breath and then click and begin</div>
+    </div>
+
+    <aside>
+      <div class="logo">
+        <h1>Type</h1>
+        <div class="subtle">Without Distraction</div>
+      </div>
+      <nav>
+        <input id="filename" type="text" value="filename.txt" />
+        <a id="save" href="#save">save</a>
+      </nav>
+    </aside>
+
+    <div contenteditable="true" id="content"></div>
+    <audio id="click4" controls style="display:none"><source src="audio/click.mp3" type="audio/mpeg"></audio>
+
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/FileSaver.min.js"></script>
+    <script src="js/type.js"></script>
+  </body>
+</html>
